@@ -1,0 +1,61 @@
+@import '_variables.sass'
+@import '_functions.sass'
+
+=displayFlex()
+    display: flex
+
+=sizes($media: null)
+    $i: 5
+    @while $i < 101
+        +basis($i, $media)
+        $i: $i + 5
+
+=orientation($horizontal, $vertical: null, $media: null)
+    @if $vertical == null
+        #{unquote('#{ media($media) }-#{$horizontal}')}
+            +displayFlex()
+            justify-content: appendFlexPrefix($horizontal)
+            align-items: appendFlexPrefix($horizontal)
+      
+    @else
+        #{unquote('#{ media($media) }-#{$horizontal}-#{$vertical}')}
+            +displayFlex()
+            justify-content: appendFlexPrefix($horizontal)
+            align-items: appendFlexPrefix($vertical)
+
+=basis($basis, $media: null)
+   #{ unquote('#{ media($media) }-#{$basis}') }
+        +displayFlex()
+        flex-basis: #{ unquote('#{$basis}%') }
+
+=direction($value, $media: null)
+    #{ unquote('#{ media($media) }-#{$value}') } 
+        +displayFlex()
+        flex-direction: toReality($value) 
+
+=wrap($media: null)
+     #{ unquote('#{ media($media) }-wrap') }
+        +displayFlex()
+        flex-wrap: wrap
+
+=generate($media: null)
+    +direction($row, $media)
+    +direction($column, $media)
+    +wrap($media)
+
+    +orientation($start, null, $media)
+    +orientation($start, $start, $media)
+    +orientation($start, $center, $media)
+    +orientation($start, $end, $media)
+
+    +orientation($center, $start, $media)
+    +orientation($center, null, $media)
+    +orientation($center, $center, $media)
+    +orientation($center, $end, $media)
+
+    +orientation($end, $start, $media)
+    +orientation($end, $center, $media)
+    +orientation($end, null, $media)
+    +orientation($end, $end, $media)
+
+    +sizes($media)

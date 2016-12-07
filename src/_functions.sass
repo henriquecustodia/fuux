@@ -1,0 +1,18 @@
+@import '_variables.sass'
+
+@function appendFlexPrefix($value)
+    @if $value != $center
+        @return unquote('flex-#{$value}')
+    @else
+        @return unquote($value)
+
+@function media($media: null)
+    @if $media == null
+        @return '#{$prefix}'
+    
+    @else
+        @return '#{$prefix}-#{$media}'
+
+
+@function toReality($value)
+    @return unquote($value)

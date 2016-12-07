@@ -1,62 +1,6 @@
-$prefix: '.flex'
+@import 'media/media-xs.sass'
+@import 'media/media-sm.sass'
+@import 'media/media-md.sass'
+@import 'media/media-lg.sass'
 
-=setDisplayFlex()
-    display: flex
-
-@function appendFlexPrefix($value)
-    @if $value != center
-        $value: unquote('flex-#{$value}')
-        @return $value
-    @else
-        @return $value
-
-=setOrientation($horizontal, $vertical)
-    @if $vertical == null
-        #{unquote('#{$prefix}-#{$horizontal}')}
-            +setDisplayFlex()
-            justify-content: appendFlexPrefix($horizontal)
-            align-items: appendFlexPrefix($horizontal)
-      
-    @else
-        #{unquote('#{$prefix}-#{$horizontal}-#{$vertical}')}
-            +setDisplayFlex()
-            justify-content: appendFlexPrefix($horizontal)
-            align-items: appendFlexPrefix($vertical)
-
-=setBasis($basis)
-   #{ unquote('#{$prefix}-#{$basis}') }
-        +setDisplayFlex()
-        flex-basis: #{ unquote('#{$basis}%') }
-
-
-#{ unquote('#{$prefix}-row') } 
-    +setDisplayFlex()
-    flex-direction: row
-
-#{ unquote('#{$prefix}-column') }
-    +setDisplayFlex()
-    flex-direction: column
-
-#{ unquote('#{$prefix}-wrap') }
-    +setDisplayFlex()
-    flex-wrap: wrap
-
-+setOrientation(start, null)
-+setOrientation(start, start)
-+setOrientation(start, center)
-+setOrientation(start, end)
-
-+setOrientation(center, start)
-+setOrientation(center, null)
-+setOrientation(center, center)
-+setOrientation(center, end)
-
-+setOrientation(end, start)
-+setOrientation(end, center)
-+setOrientation(end, null)
-+setOrientation(end, end)
-
-$i: 5
-@while $i < 101
-    +setBasis($i)
-    $i: $i + 5
++generate()
