@@ -1,0 +1,24 @@
+{
+  "name": "flex-boy",
+  "version": "0.1.0",
+  "description": "This is a Flexbox library to help to structure templates",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquecustodia/flex-boy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquecustodia/flex-boy/issues"
+  },
+  "homepage": "https://github.com/henriquecustodia/flex-boy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
+}
