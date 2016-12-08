@@ -36,6 +36,17 @@ The result is:
 
 ## Documentation
 
+### Basic 
+**Flexboy** is purely [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes), then everything you can do with Flexbox, you can do with Flexboy!
+
+The basic structure to do anything with this library is:
+
+```html
+<div class="flex-row|flex-column">
+     <div class="flex-100" ></div>
+</div> 
+```
+
 ### Responsive
 
 Flexboy uses prefixes to manage which classes should be used for each resolution. 
