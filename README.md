@@ -34,4 +34,78 @@ The result is:
 
 > The code above you can see [here](https://github.com/henriquecustodia/flex-boy/blob/master/examples/basic.html).
 
+## Documentation
+
+### Responsive
+
+Flexboy uses prefixes to manage which classes should be used for each resolution. 
+
+<table>
+   <tr>
+     <th>Prefix</th>
+     <th><= 767px</th>
+     <th>>= 768px</th>
+     <th>>= 768px and <= 991px</th>
+     <th>>= 992px</th>
+     <th>>= 992px and <= 1199px</th>
+     <th>>= 1200px</th>
+   </tr>
+   <tr>
+       <td>xs</td>
+       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><em>Nope</em></td>
+       <td align="center"><em>Nope</em></td>
+       <td align="center"><em>Nope</em></td>
+       <td align="center"><em>Nope</em></td>
+       <td align="center"><em>Nope</em></td>
+   </tr>
+   <tr>
+       <td>sm</td>
+       <td align="center"><em>Nope</em></td>
+       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><b><em>Works</em></b></td>
+   </tr>
+   <tr>
+      <td>smx</td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+   </tr>
+   <tr>
+      <td>md</td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><b><em>Works</em></b></td>
+   </tr>
+   <tr>
+      <td>mdx</td>
+      <td align="center"><em>Nope</em></td> 
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><em>Nope</em></td>
+   </tr>
+   <tr>
+      <td>lg</td>
+      <td align="center"><em>Nope</em></td>  
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>Nope</em></td>
+      <td align="center"><b><em>Works</em></b></td>
+   </tr>
+</table>
+
+
+
 
