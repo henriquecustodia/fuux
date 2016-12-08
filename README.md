@@ -28,4 +28,10 @@ Thinking about that, I have created this library to independently which template
 
 </div>
 ```
+The result is:
+
+![alt tag](https://github.com/henriquecustodia/flex-boy/blob/master/images/example.png)
+
+> The code above you can see [here](https://github.com/henriquecustodia/flex-boy/blob/master/examples/basic.html).
+
 
