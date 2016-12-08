@@ -9,7 +9,8 @@ gulp.task('sass', function () {
     return gulp.src('./src/flex-boy.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./examples/dist'))
 });
 
 gulp.task('sass:compress', function () {
@@ -19,7 +20,8 @@ gulp.task('sass:compress', function () {
             suffix: ".min",
         }))
         .pipe(autoprefixer())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./examples/dist'));
 });
 
 gulp.task('generate', () => {

@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/henriquecustodia/flex-boy#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.2"
   }
 }

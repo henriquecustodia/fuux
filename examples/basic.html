@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Basic examples</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/flex-boy.css" rel="stylesheet">
+</head>
+
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .green {
+        background: lightgreen;
+    }
+    
+    .blue {
+        background: lightblue;
+    }
+
+    .coral{
+        background: lightcoral
+    }
+</style>
+
+<body class="flex-xs-column flex-sm-row">
+
+    <div class="green flex-column flex-15 flex-center">
+       <span>Sidenav</span>
+    </div>
+    
+    <div class="flex-column flex-85">
+
+        <div class="coral flex-10 flex-center">
+            <span>Toolbar</span> 
+        </div>
+
+        <div class="blue flex-90 flex-center">
+            <span>Content</span> 
+        </div>
+
+    </div>
+</body>
+
+</html>
