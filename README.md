@@ -129,12 +129,12 @@ All Flexboy's classes always start with `flex` prefix.
 The Flexboy's basis are values from 5 to 100 (Multiples of five)
 
 For example: 
-##### ```flex-5``
+##### ``flex-5``
 ```css
     flex-basis: 5
 ```
 Or 
-##### ```flex-100``
+##### ``flex-100``
 ```css
     flex-basis: 100
 ```
