@@ -237,7 +237,7 @@ To run the Flexboy at your machine:
 Contributions is very welcome.
 If you want to contribute just follow the steps:
 * Fork this repository
-* Create a new branch to the changes at your forked repository
+* Make your changes :p
 * Create a branch for your changes in this repository 
 * Create a Pull Request to your created branch as target
 
