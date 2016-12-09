@@ -169,57 +169,57 @@ Add the responsive prefix to the classes to use on specific resolution, for exam
    </tr>
    <tr>
        <td>xs</td>
-       <td align="center"><b><em>Works</em></b></td>
-       <td align="center"><em>Nope</em></td>
-       <td align="center"><em>Nope</em></td>
-       <td align="center"><em>Nope</em></td>
-       <td align="center"><em>Nope</em></td>
-       <td align="center"><em>Nope</em></td>
+       <td align="center"><b><em>V</em></b></td>
+       <td align="center"><em>X</em></td>
+       <td align="center"><em>X</em></td>
+       <td align="center"><em>X</em></td>
+       <td align="center"><em>X</em></td>
+       <td align="center"><em>X</em></td>
    </tr>
    <tr>
        <td>sm</td>
-       <td align="center"><em>Nope</em></td>
-       <td align="center"><b><em>Works</em></b></td>
-       <td align="center"><b><em>Works</em></b></td>
-       <td align="center"><b><em>Works</em></b></td>
-       <td align="center"><b><em>Works</em></b></td>
-       <td align="center"><b><em>Works</em></b></td>
+       <td align="center"><em>X</em></td>
+       <td align="center"><b><em>V</em></b></td>
+       <td align="center"><b><em>V</em></b></td>
+       <td align="center"><b><em>V</em></b></td>
+       <td align="center"><b><em>V</em></b></td>
+       <td align="center"><b><em>V</em></b></td>
    </tr>
    <tr>
       <td>smx</td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><b><em>Works</em></b></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><b><em>V</em></b></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
    </tr>
    <tr>
       <td>md</td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><b><em>Works</em></b></td>
-      <td align="center"><b><em>Works</em></b></td>
-      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><b><em>V</em></b></td>
+      <td align="center"><b><em>V</em></b></td>
+      <td align="center"><b><em>V</em></b></td>
    </tr>
    <tr>
       <td>mdx</td>
-      <td align="center"><em>Nope</em></td> 
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><b><em>Works</em></b></td>
-      <td align="center"><em>Nope</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><b><em>V</em></b></td>
+      <td align="center"><em>X</em></td>
    </tr>
    <tr>
       <td>lg</td>
-      <td align="center"><em>Nope</em></td>  
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><em>Nope</em></td>
-      <td align="center"><b><em>Works</em></b></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><em>X</em></td>
+      <td align="center"><b><em>V</em></b></td>
    </tr>
 </table>
 
