@@ -13,6 +13,7 @@ Thinking about that, I have created this library to independently which template
 * Support to ``flex-direction``, ``justify-content``, ``align-items``, ``flex-wrap`` and ``flex-basis``.
     * support to other properties is under development.
 * Support to responsive classes
+* Support for [autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## How to install 
 > ~~npm install --save flex-boy~~
