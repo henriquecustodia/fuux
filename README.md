@@ -1,4 +1,4 @@
-# flex-boy
+# flex-boy [UNDER DEVELOPMENT]
 This is a Flexbox library to structure html templates easily!  
 
 ## Motivation
