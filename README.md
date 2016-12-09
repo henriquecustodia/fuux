@@ -7,7 +7,7 @@ But sometimes we can't to use Angular Material, because sometimes we should to u
 Thinking about that, I have created this library to independently which template we've to use, we'll can to use Flexbox semanticly and easily, into any project. \o/ 
 
 ## How to install 
-> npm install --save flex-boy
+> ~~npm install --save flex-boy~~
 #### We have to publish on npm yet
 
 ## Get started
