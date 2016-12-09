@@ -47,6 +47,76 @@ The basic structure to do anything with this library is:
 </div> 
 ```
 
+### API Reference
+
+#### Directions
+
+##### ``flex-column``
+```css
+   flex-direction: column
+```
+
+##### ``flex-row``
+```css
+   flex-direction: row
+```
+
+#### Alignment
+
+##### ``flex-start`` or ``flex-start-start``
+```css
+   justify-content: flex-start
+   align-items: flex-start
+```
+
+##### ``flex-start-center``
+```css
+   justify-content: flex-start
+   align-items: center
+```
+
+##### ``flex-start-end``
+```css
+   justify-content: flex-start
+   align-items: flex-end
+```
+
+##### ``flex-center-start``
+```css
+   justify-content: center
+   align-items: flex-start
+```
+
+##### ``flex-center`` or ``flex-center-center``
+```css
+   justify-content: center
+   align-items: center
+```
+
+##### ``flex-center-end``
+```css
+   justify-content: center
+   align-items: flex-end
+```
+
+##### ``flex-end-start``
+```css
+   justify-content: flex-end
+   align-items: flex-start
+```
+
+##### ``flex-end-center``
+```css
+   justify-content: flex-end
+   align-items: center
+```
+
+##### ``flex-end`` or ``flex-end-end``
+```css
+   justify-content: flex-end
+   align-items: flex-end
+```
+
 ### Responsive
 
 Flexboy uses prefixes to manage which classes should be used for each resolution. 
