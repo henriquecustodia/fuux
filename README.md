@@ -61,6 +61,13 @@ The basic structure to do anything with this library is:
    flex-direction: row
 ```
 
+#### Wrap
+
+##### ``flex-wrap``
+```css
+    flex-wrap: wrap 
+```
+
 #### Alignment
 
 ##### ``flex-start`` or ``flex-start-start``
