@@ -48,6 +48,7 @@ The basic structure to do anything with this library is:
 ```
 
 ### API Reference
+All Flexboy's classes always start with `flex` prefix. 
 
 #### Directions
 
@@ -122,6 +123,20 @@ The basic structure to do anything with this library is:
 ```css
    justify-content: flex-end
    align-items: flex-end
+```
+
+#### Basis
+The Flexboy's basis are values from 5 to 100 (Multiples of five)
+
+For example: 
+##### ```flex-5``
+```css
+    flex-basis: 5
+```
+Or 
+##### ```flex-100``
+```css
+    flex-basis: 100
 ```
 
 ### Responsive
