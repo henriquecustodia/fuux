@@ -225,6 +225,20 @@ Add the responsive prefix to the classes to use on specific resolution, for exam
    </tr>
 </table>
 
+## How to run
+To run the Flexboy at your machine:  
 
+``npm install``
+
+``gulp``
+
+
+## Contributions 
+Contributions is very welcome.
+If you wanto to contribute jst follow the steps:
+* Fork this repository
+* Create a new branch to the changes at your forked repository
+* Create a branch for your changes in this repository 
+* Create a Pull Request to your created branch as target
 
 
