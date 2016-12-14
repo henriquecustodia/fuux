@@ -4,7 +4,6 @@
   "description": "This is a Flexbox library to help to structure templates",
   "main": "dist/flex-boy.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
