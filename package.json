@@ -9,8 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/henriquecustodia/flex-boy.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Henrique Custódia",
+    "email": "martinshenrique8@gmail.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/henriquecustodia/flex-boy/issues"
   },
