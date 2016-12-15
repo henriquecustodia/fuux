@@ -16,8 +16,7 @@ Thinking about that, I have created this library to independently which template
 * Support for [autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## How to install 
-> ~~npm install --save flex-boy~~
-#### We have to publish on npm yet
+> npm install --save flex-boy
 
 ## Get started
 ```html
@@ -57,7 +56,7 @@ The basic structure to do anything with this library is:
 ```
 
 ### API Reference
-All Flexboy's classes always start with `flex` prefix. 
+All Flexboy's classes always starts with `flex` prefix. 
 
 #### Directions
 
@@ -140,12 +139,12 @@ The Flexboy's basis are values from 5 to 100 (Multiples of five)
 For example: 
 ##### ``flex-5``
 ```css
-    flex-basis: 5
+    flex-basis: 5%
 ```
 Or 
 ##### ``flex-100``
 ```css
-    flex-basis: 100
+    flex-basis: 100%
 ```
 
 ### Responsive
@@ -227,7 +226,7 @@ Add the responsive prefix to the classes to use on specific resolution, for exam
 </table>
 
 ## How to run
-To run the Flexboy at your machine:  
+To run the Flexboy on your machine:  
 
 ``npm install``
 
