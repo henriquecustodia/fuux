@@ -1,3 +1,8 @@
+
+<div align="center">
+   <img src="https://github.com/henriquecustodia/flex-boy/blob/master/flexboy.gif">
+</div>
+
 [UNDER DEVELOPMENT]
 
 # Flexboy 
