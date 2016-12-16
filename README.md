@@ -21,7 +21,7 @@ Thinking about that, I have created this library to independently which template
 * Support for [autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## How to install 
-npm install --save flex-boy
+``npm install --save flex-boy``
 
 ## Get started
 ```html
