@@ -1,13 +1,13 @@
 {
-  "name": "flex-boy",
+  "name": "fuux",
   "version": "0.1.0",
-  "description": "This is a Flexbox library to help to structure templates",
-  "main": "dist/flex-boy.min.css",
+  "description": "This is a Fuux library to help to structure templates",
+  "main": "dist/fuux.min.css",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henriquecustodia/flex-boy.git"
+    "url": "git+https://github.com/henriquecustodia/fuux.git"
   },
   "author": {
     "name": "Henrique Custódia",
@@ -15,9 +15,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/henriquecustodia/flex-boy/issues"
+    "url": "https://github.com/henriquecustodia/fuux/issues"
   },
-  "homepage": "https://github.com/henriquecustodia/flex-boy#readme",
+  "homepage": "https://github.com/henriquecustodia/fuux#readme",
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.1",
