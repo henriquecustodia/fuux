@@ -5,7 +5,7 @@
 
 [UNDER DEVELOPMENT]
 
-# Flexboy 
+# Fuux 
 This is a Flexbox library to structure html templates easily!  
 
 ## Motivation
@@ -50,7 +50,7 @@ The result is:
 ## Documentation
 
 ### Basic 
-**Flexboy** is purely [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes), then everything you can do with Flexbox, you can do with Flexboy!
+**Fuux** is purely [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes), then everything you can do with Flexbox, you can do with Fuux!
 
 The basic structure to do anything with this library is:
 
@@ -61,7 +61,7 @@ The basic structure to do anything with this library is:
 ```
 
 ### API Reference
-All Flexboy's classes always starts with `flex` prefix. 
+All Fuux's classes always starts with `flex` prefix. 
 
 #### Directions
 
@@ -139,7 +139,7 @@ All Flexboy's classes always starts with `flex` prefix.
 ```
 
 #### Basis
-The Flexboy's basis are values from 5 to 100 (Multiples of five)
+The Fuux's basis are values from 5 to 100 (Multiples of five)
 
 For example: 
 ##### ``flex-5``
@@ -154,7 +154,7 @@ Or
 
 ### Responsive
 
-Flexboy uses prefixes to manage which classes should be used for each resolution.
+Fuux uses prefixes to manage which classes should be used for each resolution.
 
 #### Usage
 Add the responsive prefix to the classes to use on specific resolution, for example:
@@ -231,7 +231,7 @@ Add the responsive prefix to the classes to use on specific resolution, for exam
 </table>
 
 ## How to run
-To run the Flexboy on your machine:  
+To run the Fuux on your machine:  
 
 ``npm install``
 
