@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-    return gulp.src('./src/flex-boy.sass')
+    return gulp.src('./src/fuux.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('./dist'))
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:compress', function () {
-    return gulp.src('./src/flex-boy.sass')
+    return gulp.src('./src/fuux.sass')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(rename({
             suffix: ".min",
