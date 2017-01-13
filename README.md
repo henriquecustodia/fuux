@@ -1,6 +1,6 @@
 
 <div align="center">
-   <img src="https://github.com/henriquecustodia/flex-boy/blob/master/flexboy.gif">
+   <img src="https://github.com/henriquecustodia/flex-boy/blob/master/fuux.gif">
 </div>
 
 [UNDER DEVELOPMENT]
