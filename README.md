@@ -25,17 +25,17 @@ Thinking about that, I have created this library to independently which template
 
 ## Get started
 ```html
-<div class="green flex-column flex-15 flex-center">
+<div class="green fx-column fx-15 fx-center">
     <span>Sidenav</span>
 </div>
     
-<div class="flex-column flex-85">
+<div class="fx-column fx-85">
 
-     <div class="coral flex-10 flex-center">
+     <div class="coral fx-10 fx-center">
         <span>Toolbar</span> 
     </div>
 
-    <div class="blue flex-90 flex-center">
+    <div class="blue fx-90 fx-center">
         <span>Content</span> 
     </div>
 
@@ -55,84 +55,84 @@ The result is:
 The basic structure to do anything with this library is:
 
 ```html
-<div class="flex-row|flex-column">
-     <div class="flex-100" ></div>
+<div class="fx-row|fx-column">
+     <div class="fx-100" ></div>
 </div> 
 ```
 
 ### API Reference
-All Fuux's classes always starts with `flex` prefix. 
+All Fuux's classes always starts with `fx` prefix. 
 
 #### Directions
 
-##### ``flex-column``
+##### ``fx-column``
 ```css
    flex-direction: column
 ```
 
-##### ``flex-row``
+##### ``fx-row``
 ```css
    flex-direction: row
 ```
 
 #### Wrap
 
-##### ``flex-wrap``
+##### ``fx-wrap``
 ```css
     flex-wrap: wrap 
 ```
 
 #### Alignment
 
-##### ``flex-start`` or ``flex-start-start``
+##### ``fx-start`` or ``fx-start-start``
 ```css
    justify-content: flex-start
    align-items: flex-start
 ```
 
-##### ``flex-start-center``
+##### ``fx-start-center``
 ```css
    justify-content: flex-start
    align-items: center
 ```
 
-##### ``flex-start-end``
+##### ``fx-start-end``
 ```css
    justify-content: flex-start
    align-items: flex-end
 ```
 
-##### ``flex-center-start``
+##### ``fx-center-start``
 ```css
    justify-content: center
    align-items: flex-start
 ```
 
-##### ``flex-center`` or ``flex-center-center``
+##### ``fx-center`` or ``fx-center-center``
 ```css
    justify-content: center
    align-items: center
 ```
 
-##### ``flex-center-end``
+##### ``fx-center-end``
 ```css
    justify-content: center
    align-items: flex-end
 ```
 
-##### ``flex-end-start``
+##### ``fx-end-start``
 ```css
    justify-content: flex-end
    align-items: flex-start
 ```
 
-##### ``flex-end-center``
+##### ``fx-end-center``
 ```css
    justify-content: flex-end
    align-items: center
 ```
 
-##### ``flex-end`` or ``flex-end-end``
+##### ``fx-end`` or ``fx-end-end``
 ```css
    justify-content: flex-end
    align-items: flex-end
@@ -142,12 +142,12 @@ All Fuux's classes always starts with `flex` prefix.
 The Fuux's basis are values from 5 to 100 (Multiples of five)
 
 For example: 
-##### ``flex-5``
+##### ``fx-5``
 ```css
     flex-basis: 5%
 ```
 Or 
-##### ``flex-100``
+##### ``fx-100``
 ```css
     flex-basis: 100%
 ```
@@ -159,74 +159,51 @@ Fuux uses prefixes to manage which classes should be used for each resolution.
 #### Usage
 Add the responsive prefix to the classes to use on specific resolution, for example:
 
-``flex-[responsive prefix]-[property]`` 
-> flex-md-center
+``fx-[responsive prefix]-[property]`` 
+> fx-md-center
 
 #### Responsive Table
 
 <table>
    <tr>
      <th>Prefix</th>
-     <th><= 767px</th>
-     <th>>= 768px</th>
-     <th>>= 768px and <= 991px</th>
-     <th>>= 992px</th>
-     <th>>= 992px and <= 1199px</th>
-     <th>>= 1200px</th>
+     <th>Media</th>
    </tr>
    <tr>
        <td>xs</td>
-       <td align="center"><b><em>V</em></b></td>
-       <td align="center"><em>X</em></td>
-       <td align="center"><em>X</em></td>
-       <td align="center"><em>X</em></td>
-       <td align="center"><em>X</em></td>
-       <td align="center"><em>X</em></td>
+       <td align="center"> (max-width: 599px) </td>
    </tr>
    <tr>
-       <td>sm</td>
-       <td align="center"><em>X</em></td>
-       <td align="center"><b><em>V</em></b></td>
-       <td align="center"><b><em>V</em></b></td>
-       <td align="center"><b><em>V</em></b></td>
-       <td align="center"><b><em>V</em></b></td>
-       <td align="center"><b><em>V</em></b></td>
+       <td>gt-xs</td>
+       <td align="center"> (min-width: 600px) </td>
    </tr>
    <tr>
-      <td>smx</td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><b><em>V</em></b></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
+      <td>sm</td>
+      <td align="center">(min-width: 600px)  and (max-width: 959px) </td>
+   </tr>
+   <tr>
+      <td>gt-sm</td>
+      <td align="center">(min-width: 960px) </td>
    </tr>
    <tr>
       <td>md</td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><b><em>V</em></b></td>
-      <td align="center"><b><em>V</em></b></td>
-      <td align="center"><b><em>V</em></b></td>
+      <td align="center">(min-width: 960px)  and (max-width: 1279px) </td>
    </tr>
    <tr>
-      <td>mdx</td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><b><em>V</em></b></td>
-      <td align="center"><em>X</em></td>
+      <td>gt-md</td>
+      <td align="center">(min-width: 1280px) </td>
    </tr>
    <tr>
       <td>lg</td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><em>X</em></td>
-      <td align="center"><b><em>V</em></b></td>
+      <td align="center">(min-width: 1280px)  and (max-width: 1919px) </td>
+   </tr>
+   <tr>
+      <td>gt-lg</td>
+      <td align="center">(min-width: 1920px) </td>
+   </tr>
+   <tr>
+      <td>xl</td>
+      <td align="center">(min-width: 1920px)  and (max-width: 5000px) </td>
    </tr>
 </table>
 

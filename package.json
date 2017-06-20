@@ -1,7 +1,7 @@
 {
   "name": "fuux",
-  "version": "0.1.0",
-  "description": "This is a Fuux library to help to structure templates",
+  "version": "1.0.0-beta",
+  "description": "This is a Flexbox library",
   "main": "dist/fuux.min.css",
   "scripts": {
   },
