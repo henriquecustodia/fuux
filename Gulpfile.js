@@ -4,24 +4,49 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
+const gulpIf = require('gulp-if');
 
-gulp.task('sass', function () {
-    return gulp.src('./src/fuux.sass')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest('./dist'))
-        .pipe(gulp.dest('./examples/dist'))
-});
+function getSuffix({ compressed, prefixed }) {
+    if (compressed) {
+        if (prefixed) {
+            return '.prefixed.min';
+        }
 
-gulp.task('sass:compress', function () {
-    return gulp.src('./src/fuux.sass')
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        return '.min';
+    }
+
+    if (prefixed) {
+        return '.prefixed';
+    }
+
+    return '';
+}
+
+function bundleFn({ compressed, prefixed }) {
+    return gulp.src('./src/fuux.scss')
+        .pipe(gulpIf(compressed, sass({ outputStyle: 'compressed' }), sass()))
+        .pipe(gulpIf(prefixed, autoprefixer()))
         .pipe(rename({
-            suffix: ".min",
+            suffix: getSuffix({ compressed, prefixed }),
         }))
-        .pipe(autoprefixer())
         .pipe(gulp.dest('./dist'))
         .pipe(gulp.dest('./examples/dist'));
+}
+
+gulp.task('sass', () => {
+    return bundleFn({ compressed: false, prefixed: false })
+});
+
+gulp.task('sass:prefixed', () => {
+    return bundleFn({ compressed: false, prefixed: true })
+});
+
+gulp.task('sass:compress', () => {
+    return bundleFn({ compressed: true, prefixed: false })
+});
+
+gulp.task('sass:prefixed:compress', () => {
+    return bundleFn({ compressed: true, prefixed: true })
 });
 
 gulp.task('generate', () => {
@@ -29,7 +54,7 @@ gulp.task('generate', () => {
 });
 
 gulp.task('build', () => {
-    gulp.start(['sass', 'sass:compress']);
+    gulp.start(['sass', 'sass:prefixed', 'sass:compress', 'sass:prefixed:compress']);
 });
 
 gulp.task('default', () => {

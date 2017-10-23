@@ -1,0 +1,101 @@
+@mixin displayFlex() {
+    display: flex;
+}
+
+@mixin orientation($horizontal, $vertical: null, $media: null) {
+    @if $vertical == null {
+        #{unquote('#{ media($media) }-#{map-get($horizontal, key)}')} {
+            @include displayFlex();
+            justify-content: map-get($horizontal, value);
+            align-items: map-get($horizontal, value);
+        }
+    }      
+    @else {
+        #{unquote('#{ media($media) }-#{ map-get($horizontal, key) }-#{ map-get($vertical, key) }')} {
+            @include displayFlex();
+            justify-content: map-get($horizontal, value);
+            align-items: map-get($vertical, value);
+        }
+    }
+}
+
+@mixin direction($direction, $media: null) {
+    #{ unquote('#{ media($media) }-#{ map-get($direction, key) }') }  {
+        @include displayFlex();
+        flex-direction: map-get($direction, value);
+    }
+}
+
+@mixin sizes($media: null) {
+    $i: 5;
+    @while $i < 101 {
+        @include basis($i, $media);
+        $i: $i + 5;
+    }
+}
+        
+@mixin basis($basis, $media: null) {
+   #{ unquote('#{ media($media) }-#{$basis}') } {
+        @include displayFlex();
+        flex-basis: #{ unquote('#{$basis}%') };
+   }
+}
+
+@mixin wrap($map, $media: null) {
+     #{ unquote('#{ media($media) }-#{ map-get($map, key) }') } {
+        @include displayFlex();
+        flex-wrap: map-get($map, value);
+     }
+}
+
+@mixin generate($media: null) {
+    @include direction(map-get($directions, row), $media);
+    @include direction(map-get($directions, row-reverse), $media);
+    @include direction(map-get($directions, column), $media);
+    @include direction(map-get($directions, column-reverse), $media);
+
+    @include wrap(map-get($wrap, nowrap), $media);
+    @include wrap(map-get($wrap, wrap), $media);
+    @include wrap(map-get($wrap, wrap-reverse), $media);
+
+    @include sizes($media);
+    
+    @include orientation(map-get($orientations, start), null, $media);
+    @include orientation(map-get($orientations, start), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, start), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, start), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, start), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, start), map-get($orientations, stretch), $media);
+ 
+    @include orientation(map-get($orientations, center), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, center), null, $media);
+    @include orientation(map-get($orientations, center), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, center), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, center), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, center), map-get($orientations, stretch), $media); 
+ 
+    @include orientation(map-get($orientations, end), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, end), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, end), null, $media);
+    @include orientation(map-get($orientations, end), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, end), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, end), map-get($orientations, stretch), $media);
+ 
+    @include orientation(map-get($orientations, space-between), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, space-between), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, space-between), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, space-between), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, space-between), map-get($orientations, stretch), $media);
+ 
+    @include orientation(map-get($orientations, space-around), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, space-around), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, space-around), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, space-around), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, space-around), map-get($orientations, stretch), $media);
+ 
+    @include orientation(map-get($orientations, space-evenly), map-get($orientations, start), $media);
+    @include orientation(map-get($orientations, space-evenly), map-get($orientations, center), $media);
+    @include orientation(map-get($orientations, space-evenly), map-get($orientations, end), $media);
+    @include orientation(map-get($orientations, space-evenly), map-get($orientations, baseline), $media);
+    @include orientation(map-get($orientations, space-evenly), map-get($orientations, stretch), $media);
+}

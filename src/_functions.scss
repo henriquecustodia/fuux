@@ -1,0 +1,9 @@
+@function media($media: null) {
+    @if $media == null {
+        @return '.#{$prefix}';
+    }
+    
+    @else {
+        @return '.#{$prefix}-#{$media}';
+    }
+}

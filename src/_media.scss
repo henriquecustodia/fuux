@@ -1,0 +1,35 @@
+@media (max-width: $xs-max) {
+    @include generate($xs);
+}
+
+@media  (min-width: $sm-min) {
+    @include generate($gt-xs);
+}
+
+@media  (min-width: $sm-min)  and (max-width: $sm-max) {
+    @include generate($sm);
+}
+
+@media (min-width: $md-min) {
+    @include generate($gt-sm);
+}
+
+@media (min-width: $md-min) and (max-width: $md-max) {
+    @include generate($md);
+}
+
+@media (min-width: $lg-min){
+    @include generate($gt-md);
+}
+
+@media (min-width: $lg-min) and (max-width: $lg-max) {
+    @include generate($lg);
+}
+
+@media (min-width: $xl-min) {
+    @include generate($gt-lg);
+}
+
+@media (min-width: $xl-min) {
+    @include generate($xl);
+}

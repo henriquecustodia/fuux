@@ -1,0 +1,100 @@
+$prefix: 'fx';
+
+$directions: (
+    row: (
+        key: 'row',
+        value: row
+    ),
+    row-reverse: (
+        key: 'rowre',
+        value: row-reverse
+    ),
+    column: (
+        key: 'col',
+        value: column
+    ),
+    column-reverse: (
+        key: 'colre',
+        value: column-reverse
+    )
+);
+
+$orientations: (
+    start: (
+        key: 'start',
+        value: flex-start 
+    ),
+    center: (
+        key: 'center',
+        value: center
+    ),
+    end: (
+        key: 'end',
+        value: flex-end  
+    ),
+    space-between: (
+        key: 'spbetween',
+        value: space-between,
+    ),
+    space-around: (
+        key: 'sparound',
+        value: space-around,
+    ),
+    space-evenly: (
+        key: 'spevenly',
+        value: space-evenly,
+    ),
+    baseline: (
+        key: 'baseline',
+        value: baseline,
+    ),
+    stretch: (
+        key: 'stretch',
+        value: stretch,
+    )
+);
+
+$wrap: (
+    nowrap: (
+        key: 'nowrap',
+        value: nowrap
+    ),
+    wrap: (
+        key: 'wrap',
+        value: wrap
+    ),
+    wrap-reverse: (
+        key: 'wrapre',
+        value: wrap-reverse
+    )
+);
+
+// xlarge
+$gt-lg: 'gt-lg';
+$xl: 'xl';
+$xl-min: 1920px;
+$xl-max: 5000px;
+
+// large
+$gt-md: 'gt-md';
+$lg: 'lg';
+$lg-min: 1280px;
+$lg-max: $xl-min - 1px;
+
+// medium
+$gt-sm: 'gt-sm';
+$md: 'md';
+$md-min: 960px;
+$md-max: $lg-min - 1px;
+
+// small 
+$gt-xs: 'gt-xs';
+$sm: 'sm';
+$sm-min: 600px;
+$sm-max: $md-min - 1px;
+
+// extreme small
+$xs: 'xs';
+$xs-max: $sm-min - 1px;
+
+
