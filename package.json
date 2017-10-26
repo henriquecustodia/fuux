@@ -22,6 +22,7 @@
     "gulp-autoprefixer": "3.1.1",
     "gulp-if": "2.0.2",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "2.3.2"
+    "gulp-sass": "2.3.2",
+    "http-server": "^0.10.0"
   }
 }

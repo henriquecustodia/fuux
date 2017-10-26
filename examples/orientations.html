@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Basic examples</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/fuux.css" rel="stylesheet">
+</head>
+
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        height: 200px;
+        border: 1px dashed #000;
+    }
+
+    .item {
+        border: 1px solid #000;
+        height: 25px;
+    }
+
+    .big-item {
+        border: 1px solid #000;
+        height: 50px;
+    }
+
+    .stretch-item {
+        border: 1px solid #000;
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <h1>Space between</h1>
+    <div class="container fx-row fx-spbetween-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h1>Space Around</h1>
+    <div class="container fx-row fx-sparound-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>  
+
+    <h1>Baseline</h1>
+    <div class="container fx-row fx-center-baseline">
+        <div class="item fx-center">Item 1</div>
+        <div class="big-item fx-center">Item 2</div>
+        <div class="item fx-center">Item 3</div>
+        <div class="big-item fx-center">Item 4</div>
+    </div>
+
+    <h1>Stretch</h1>
+    <div class="container fx-row fx-center-stretch">
+        <div class="stretch-item fx-center">Item 1</div>
+        <div class="stretch-item fx-center">Item 2</div>
+        <div class="stretch-item fx-center">Item 3</div>
+        <div class="stretch-item fx-center">Item 4</div>
+    </div>
+
+</body>
+
+</html>

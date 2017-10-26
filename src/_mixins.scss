@@ -93,9 +93,9 @@
     @include orientation(map-get($orientations, space-around), map-get($orientations, baseline), $media);
     @include orientation(map-get($orientations, space-around), map-get($orientations, stretch), $media);
  
-    @include orientation(map-get($orientations, space-evenly), map-get($orientations, start), $media);
-    @include orientation(map-get($orientations, space-evenly), map-get($orientations, center), $media);
-    @include orientation(map-get($orientations, space-evenly), map-get($orientations, end), $media);
-    @include orientation(map-get($orientations, space-evenly), map-get($orientations, baseline), $media);
-    @include orientation(map-get($orientations, space-evenly), map-get($orientations, stretch), $media);
+    // @include orientation(map-get($orientations, space-evenly), map-get($orientations, start), $media);
+    // @include orientation(map-get($orientations, space-evenly), map-get($orientations, center), $media);
+    // @include orientation(map-get($orientations, space-evenly), map-get($orientations, end), $media);
+    // @include orientation(map-get($orientations, space-evenly), map-get($orientations, baseline), $media);
+    // @include orientation(map-get($orientations, space-evenly), map-get($orientations, stretch), $media);
 }
