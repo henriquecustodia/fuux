@@ -3,15 +3,13 @@
    <img src="https://github.com/henriquecustodia/flex-boy/blob/master/fuux.gif" width="300px" height="300px">
 </div>
 
-[UNDER DEVELOPMENT]
-
 # Fuux 
+
 This is a Flexbox library to structure html templates easily!  
 
 ## Motivation
-I like the Angular Material library and the approach using directives based on Flexbox, is amazing really. 
-But sometimes we can't to use Angular Material, because sometimes we should to use another library or template. 
-Thinking about that, I have created this library to independently which template we've to use, we'll can to use Flexbox semanticly and easily, into any project. \o/ 
+
+Use Flexbox semanticly and easily, no matter what css framework the application is using or want to use.
 
 ## Features
 * Writes all using just css classes
@@ -208,20 +206,22 @@ Add the responsive prefix to the classes to use on specific resolution, for exam
 </table>
 
 ## How to run
+
 To run the Fuux on your machine:  
 
 ``npm install``
 
 ``gulp``
 
-
 ## Contributions 
+
 Contributions is very welcome.
+
 If you want to contribute just follow the steps:
+
 * Fork this repository
-* Make your changes :p
-* Create a branch for your changes in this repository 
-* Create a Pull Request to your created branch as target
+* Make your changes on **dev** branch
+* Make a pull request targeting to dev branch 
 
 Enjoy!
 
