@@ -6,11 +6,6 @@
 # Fuux 
 This is a Flexbox library to structure html templates easily!  
 
-## Motivation
-I like the Angular Material library and the approach using directives based on Flexbox, is amazing really. 
-But sometimes we can't to use Angular Material, because sometimes we should to use another library or template. 
-Thinking about that, I have created this library to independently which template we've to use, we'll can to use Flexbox semanticly and easily, into any project. \o/ 
-
 ## Features
 * Writes all using just css classes
 * Support to ``flex-direction``, ``justify-content``, ``align-items``, ``flex-wrap`` and ``flex-basis``.
