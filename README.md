@@ -4,8 +4,8 @@
 </div>
 
 # Fuux 
-This is a Flexbox library to structure html templates easily!  
-
+:cyclone: :sunglasses: flexbox library to create amazing layouts 
+ 
 ## Features
 * Writes all using just css classes
 * Support to ``flex-direction``, ``justify-content``, ``align-items``, ``flex-wrap`` and ``flex-basis``.
