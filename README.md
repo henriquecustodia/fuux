@@ -43,9 +43,9 @@ The result is:
 ## Documentation
 
 ### Basic 
-**Fuux** is purely [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes), then everything you can do with Flexbox, you can do with Fuux!
+**Fuux** is purely [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes), so everything you can do with Flexbox, you can do with Fuux!
 
-The basic structure to do anything with this library is:
+The basic structure to do anything:
 
 ```html
 <div class="fx-row|fx-column">
